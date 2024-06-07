@@ -13,6 +13,7 @@ const checkTokenMiddleware = require("../db/middleware/checkToken");
 // 获取列表
 router.get("/books", (req, res) => {
   console.log('/books', req);
+  
   BookModel.find()
     .sort({ time: -1 })
     .limit(10)
