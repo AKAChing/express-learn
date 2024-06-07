@@ -1,0 +1,32 @@
+{
+  "singers": [
+    {
+      "singer_name": "周杰伦",
+      "singer_age": 42,
+      "en_name": "Jay Chou",
+      "singer_id": 4558,
+      "id": 1
+    },
+    {
+      "singer_name": "王力宏",
+      "singer_age": 46,
+      "en_name": "Leem Wang",
+      "singer_id": 5488,
+      "id": 2
+    },
+    {
+      "singer_name": "林俊杰",
+      "singer_age": 38,
+      "en_name": "JJ Lin",
+      "singer_id": 2454,
+      "id": 3
+    },
+    {
+      "singer_name": "陶喆",
+      "singer_age": 51,
+      "en_name": "David Tao",
+      "singer_id": 3644,
+      "id": 4
+    }
+  ]
+}

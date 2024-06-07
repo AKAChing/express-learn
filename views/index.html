@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="flex flex-col">
+        <div class="basis-1"><input type="text" placeholder="账号" v-model="form.username"></div> 
+        <div class="basis-1"><input type="password" placeholder="密码" v-model="form.password"></div> 
+        <div class="basis-1"><button @click="btnClick">登录</button></div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" setup>
+      import { createApp, ref, reactive } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+      const form = ref({
+        username: '11',
+        password: '22'
+      })
+      createApp({
+        setup() {
+          const form = ref({
+            username: '1',
+            password: '2'
+          })
+          const btnClick = () => {
+            console.log(form.value);
+          }
+          return {
+            form,
+            btnClick
+          }
+        }
+      }).mount('#app')
+    
+    </script>
+  </body>
+</html>
