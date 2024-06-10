@@ -61,7 +61,7 @@ router.get("/books/:id", checkTokenMiddleware, (req, res) => {
 });
 
 // 创建
-router.post("/books", [checkTokenMiddleware, jsonParser], (req, res) => {
+router.post("/books", [jsonParser], (req, res) => {
   BookModel.create({
     ...req.body,
   })
