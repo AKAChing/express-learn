@@ -11,6 +11,7 @@ db(async () => {
   app.use("/api", [booksRouter, loginRouter]);
   app.use("/", homeRouter);
   app.use("/", adminRouter);
+  app.set('host', '192.1681.1.7')
   app.listen(3000, () => {
     console.log("服务启动成功! 端口3000, 正在监听中~");
   });
